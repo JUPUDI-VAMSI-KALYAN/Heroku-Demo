@@ -18,8 +18,8 @@
      <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('predict')}}"method="post">
     	<input type="text" name="experience" placeholder="Experience" required="required" />
-        <input type="text" name="test_score(0 to 10)" placeholder="Test Score" required="required" />
-		<input type="text" name="interview_score(0 to 10)" placeholder="Interview Score" required="required" />
+        <input type="text" name="test_score(0 to 10)" placeholder="Test Score(0 to 10)" required="required" />
+		<input type="text" name="interview_score(0 to 10)" placeholder="Interview Score( 0 to 10)" required="required" />
 
         <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
     </form>
